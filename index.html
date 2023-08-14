@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grievence</title>
+
+    
+    <!-- Favi Icon  -->
+    <link rel="shortcut icon" href="/assets/favicon.jpg" type="image/x-icon">
+
+
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav_container main_nav flex">
+          <a href="#" class="company_logo">
+            <img src="img/asset 1.png" alt="Company logo" />
+          </a>
+          <div class="nav_links">
+            <ul class="flex">
+              <li><a href="login.html" class="hover_links nav_style">Home</a></li>
+              <li><a href="admin_login.html" class="hover_links nav_style">Admin</a></li>
+              <li><a href="#" class="hover_links nav_style">About us</a></li>
+              <!-- <li><a href="#" class="hover_links primary_button">Log in</a></li> -->
+              <li><a href="sign_up.html" class="hover_links primary_button">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header_content">
+        <div class="login-box">
+          <form action="dashbord.html">
+            <div class="user-box">
+              <input type="text" name="a" id="user" />
+              <label>Username</label>
+            </div>
+            <div class="user-box">
+              <input type="password" name="b" id="password" />
+              <label>Password</label>
+            </div>
+            <a href="dashbord.html" onclick="log()">
+              Log in
+              <span></span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--loder stction start-->
+
+    <div class="loader-container">
+      <img src="/img/load.gif" alt="" />
+    </div>
+
+    <!--loder stction end-->
+
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+
+    <!-- Font Awasome -->
+    <script
+      src="https://kit.fontawesome.com/33d55e001c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        /* page refresh section start */
+
+ function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+    }
+    
+    function fadeOut(){
+        setInterval(loader, 3000);
+    }
+  
+    window.onload = fadeOut();
+  
+    /* page refresh section end */
+    </script>
+  </body>
+</html>

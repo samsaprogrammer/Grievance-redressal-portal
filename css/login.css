@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: url(/assets/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.outer{
+    display: flex;
+}
+
+.user_login{
+    margin-left: 300px;
+    margin-top: 150px;
+    /* display: flex; */
+    width: 300px;
+    height: 300px;
+}
+
+.user_login a{
+  text-decoration: none;
+}
+
+
+
+.card {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    /* margin-top: 110px; */
+    /* margin-left: 300px; */
+  }
+  
+  .card:hover {
+    border: 1px solid #CE2E22;
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .admin_login{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+
+  .admin_login a{
+    text-decoration: none;
+  }
+
+  .card i{
+    font-size: 100px;
+    margin-top: 80px;
+  }
+
+
+  .card h2{
+    margin-top: 30px;
+  }
+
+  .logo{
+    margin-left: 550px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 50px;
+  }
+
+
+
+  /*lodeer section start*/
+
+.loader-container
+{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loader-container.fade-out
+{
+    top: -120%;
+}
+
+/*lodeer section end */
+
+
+/* Copy right section start */
+
+.copy_right {
+   margin-top: 100px;
+   margin-left: 290px;
+}
+
+.copy_right h3{
+  color: rgb(236, 11, 11);
+}
+
+.copy_right h3 span a{
+  color: #000;
+  text-decoration: none;
+}
+
+.copy_right h3 span a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Copy right section end */

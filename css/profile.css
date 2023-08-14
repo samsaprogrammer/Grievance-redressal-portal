@@ -1,0 +1,378 @@
+.profile{
+    background-color: #fff;
+    height: 600px;
+}
+
+.sideNav-img a img{
+  border-radius: 50%;
+  height: 120px;
+  margin-left: 30px;
+}
+
+.nav-bar span a ion-icon{
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+}
+
+.nav-bar span a ion-icon:hover{
+  color: orangered;
+}
+
+.user ion-icon{
+    font-size: 2rem;
+    position: absolute;
+    top: 5px;
+    color: orangered;
+}
+
+.user ion-icon:hover{
+  color: #000;
+}
+
+
+
+.profile h1{
+  position: absolute;
+  color: gray;
+  left: 100px;
+  top: 70px;
+}
+
+/* profile card section start */
+
+.cards {
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 15px;
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.cards .red {
+  background-color: #e1fac6;
+}
+
+.cards .blue {
+  background-color: #e1fac6;
+}
+
+.cards .green {
+  background-color: #e1fac6;
+}
+
+.cards .card {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+  /* text-align: center; */
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.time-table{
+  position: relative;
+  height: 150px;
+  width: 970px;
+  background: #e1fac6;
+  margin-top: 50px;
+  margin-left:100px;
+  border-radius: 10px;
+}
+
+.time-table h1{
+  text-align: center;
+  margin-left:230px;
+  margin-bottom: 20px;
+}
+
+.announcement{
+position: absolute;
+  height: 150px;
+  width: 100px;
+  background: #e1fac6;
+}
+
+/* profile card section start */
+
+
+/* Skill process section start */
+
+.circular-progress-1{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4500 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 25px;
+}
+
+
+.circular-progress-1::before{
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-value-1{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+
+.skill-container-1 ion-icon{
+  font-size: 2rem;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #ff4500;
+}
+
+.procecc-text-1{
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: gray;
+}
+
+
+/* Secound process circle section start */
+
+
+.circular-progress-2{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4500 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 25px;
+}
+
+
+.circular-progress-2::before{
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-value-2{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+
+.skill-container-2 ion-icon{
+  font-size: 2rem;
+  position: absolute;
+  left: 230px;
+  top: 10px;
+  color: #ff4500;
+}
+
+.procecc-text-2{
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  left: 230px;
+  color: gray;
+}
+
+/* Secound process circle section end */
+
+
+
+
+
+/* Third process circle section start */
+.circular-progress-3{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4500 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 25px;
+}
+
+
+.circular-progress-3::before{
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-value-3{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+
+.skill-container-3 ion-icon{
+  font-size: 2rem;
+  position: absolute;
+  left: 430px;
+  top: 10px;
+  color: #ff4500;
+}
+
+.procecc-text-3{
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  left: 430px;
+  color: gray;
+}
+
+/* Third process circle section end */
+
+
+
+
+
+
+/* fourth process circle section start */
+.circular-progress-4{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4500 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 25px;
+}
+
+
+.circular-progress-4::before{
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-value-4{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+
+.skill-container-4 ion-icon{
+  font-size: 2rem;
+  position: absolute;
+  left: 620px;
+  top: 10px;
+  color: #ff4500;
+}
+
+.procecc-text-4{
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  left: 620px;
+  color: gray;
+}
+
+/* Fourth process circle section end */
+
+
+
+
+
+/* fifthprocess circle section start */
+.circular-progress-5{
+  position: relative;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff4500 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  left: 25px;
+}
+
+
+.circular-progress-5::before{
+  content: '';
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.progress-value-5{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+
+.skill-container-5 ion-icon{
+  font-size: 2rem;
+  position: absolute;
+  left: 820px;
+  top: 10px;
+  color: #ff4500;
+}
+
+.procecc-text-5{
+  font-size: 18px;
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  color: gray;
+}
+
+/* Fifth process circle section end */
+
+/* Skill process section end */

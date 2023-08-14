@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Css  -->
+    <link rel="stylesheet" href="/css/login.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- FiveIcon -->
+    <link rel="shortcut icon" href="/assets/login.jpg" type="image/x-icon">
+</head>
+<body>
+
+
+    <div class="logo">
+        <img src="/assets/login_logo.png" alt="">
+    </div>
+    <div class="outer">
+
+       
+           <!-- User login section start -->
+    <div class="user_login">
+     <a href="index.html">
+        <div class="card">
+            <i class="fa-solid fa-users" style="color: #CE2E22;"></i>
+            <h2>User Login</h2>
+          </div>
+     </a>
+    </div>
+    <!-- User login section end -->
+
+    <!-- Admin login section start -->
+    <div class="admin_login">
+       <a href="admin_login.html">
+        <div class="card">
+            <i class="fa-solid fa-user" style="color: #CE2E22;"></i>
+            <h2>Admin Login</h2>
+          </div>
+       </a>
+    </div>
+    <!-- Admin login section end -->
+    </div>
+
+    <div class="copy_right">
+        <h3>
+            © 2023 GRP Online. All Rights Reserved | Designed and Developed By 
+            <span>
+                <a href="https://github.com/samsa-programmer" target="_blank"> Samsa Programmer</a>
+            </span>.
+        </h3>
+    </div>
+
+    
+    <!--loder stction start-->
+
+    <div class="loader-container">
+        <img src="/img/load.gif" alt="" />
+      </div>
+  
+      <!--loder stction end-->
+
+
+
+
+    <script>
+        /* page refresh section start */
+
+ function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+    }
+    
+    function fadeOut(){
+        setInterval(loader, 3000);
+    }
+  
+    window.onload = fadeOut();
+  
+    /* page refresh section end */
+    </script>
+</body>
+</html>

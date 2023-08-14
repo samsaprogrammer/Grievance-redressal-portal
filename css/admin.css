@@ -1,0 +1,360 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+:root{
+    --orange:#ff6600;
+    --white:#fff;
+    --gray:#f5f5f5;
+    --black01:#222;
+    --black02:#999;
+}
+
+body{
+    min-height: 100vh;
+    /* height: 100%; */
+    /* overflow: hidden; */
+}
+
+.dash_cotainer{
+    position: relative;
+    width: 100%;
+}
+
+.das_navigation{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: var(--orange);
+    border-left: 10px solid var(--orange);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.das_navigation.active{
+    width: 80px;
+}
+
+.das_navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.das_navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.sideNav-img a img.active{
+   display: none;
+}
+
+.sideNav-img a img{
+    border-radius: 50%;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+
+.das_navigation ul li:hover,
+.das_navigation ul li.hovered{
+    background-color: var(--white);
+}
+
+.das_navigation ul li:nth-child(1){
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.das_navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.das_navigation ul li:hover a,
+.das_navigation ul li.hovered a{
+    color: var(--orange);
+}
+
+.das_navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.das_navigation ul li a .icon ion-icon{
+    font-size: 1.75rem;
+}
+
+.das_navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+
+
+/* ------------Curve outside------------------- */
+
+.das_navigation ul li:hover a::before,
+.das_navigation ul li.hovered a::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top:-50px;
+    width: 50px;
+    height: 50px;
+    background-color:transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+.das_navigation ul li:hover a::after,
+.das_navigation ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom:-50px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+
+
+.main_content{
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.main_content.active{
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle{
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    width: 600px;
+    margin: 0 10px;
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+}
+
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+.search label ion-icon{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.user{
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header nav section end */
+
+
+/* Add cart section start */
+
+.chart_content{
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 200px;
+    min-height: 100vh;
+    /* background: var(--white); */
+    transition: 0.5s;
+}
+
+.graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+}
+
+.graphBox .chart_box{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+/* Add cart section end */
+
+
+
+/* Main Header Contant Section Start */
+
+/* .recent{
+    margin-top: 3rem;
+} */
+
+.activity-grid{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column-gap: 1.5em;
+}
+
+.activity-card{
+    background: #fff;
+    border-radius: 7px;
+    margin-left: 20px;
+}
+
+.activity-card h3{
+    color: var(--black02);
+    margin: 1rem;
+}
+
+.activity-card table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-card thead{
+    background: #efefef;
+    text-align: left;
+}
+
+
+
+th, td{
+    font-size: .9rem;
+    padding:  .6rem 1rem;
+}
+
+
+td{
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even){
+    background: #f9fafc;
+}
+
+
+.badge{
+    padding: .2rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.badge.success{
+    background: #DEF7EC;
+    color: green;
+}
+.badge.waring{
+    background: #f0f6b2;
+    color: orange;
+}
+
+.td-team{
+    display: flex;
+    align-items: center;
+}
+
+.img-1,
+.img-2,
+.img-3{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 3px solid #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-1{
+    background: url(/img/face1.jpg  );
+}
+.img-2{
+    background: url(/img/face2.jpg);
+}
+.img-3{
+    background: url(/img/face2.jpg);
+}
+
