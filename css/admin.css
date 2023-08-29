@@ -181,6 +181,10 @@ body{
     cursor: pointer;
 }
 
+.toggle ion-icon{
+    color: #fff;
+}
+
 .search{
     position: relative;
     width: 600px;

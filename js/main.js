@@ -23,4 +23,24 @@ toggle.onclick = function (){
     main.classList.toggle("active");
 };
 
+
+// Validition section start
+
+
+
+function log(){
+    let user = document.getElementById("user").value;
+    let password = document.getElementById("password").value;
+    //alert(user);
+
+    if(user == ""){
+        // document.getElementById.style.borer=1px solid red;
+    }else{
+        alert("invalid");
+    }
+}
+
+
+// Validition section end
+
  

@@ -14,6 +14,7 @@
     --gray:#f5f5f5;
     --black01:#222;
     --black02:#999;
+    --backgound:#d4f7acb4;
 }
 
 body{
@@ -62,7 +63,7 @@ body{
 .sideNav-img a img{
     border-radius: 50%;
     height: 100px;
-    margin-left: 70px;
+    margin-left: 40px;
     margin-top: 30px;
   }
 
@@ -145,6 +146,163 @@ body{
     pointer-events: none;
 }
 
+
+/* Profil image section start */
+
+/* Full-width input fields */
+
+  
+  /* Set a style for all buttons */
+ 
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+
+      .close:hover,
+      .close:focus {
+        color: var(--orange);
+        cursor: pointer;
+      }
+  
+  /* Extra styles for the cancel button */
+
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+   
+  button{
+    border: none;
+    border-radius: 50%;
+  }
+  
+  img.avatar {
+    width: 30%;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+  .container h2{
+    text-align: center;
+  }
+  .container p{
+    text-align: center;
+  }
+  .container h1{
+    text-align: center;
+    border: 2px solid gray;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--orange);
+  }
+
+  .container h1:hover{
+    color: var(--black02);
+  }
+  
+
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 68%;
+    top: 0%;
+    width: 35%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background: linear-gradient(rgba(250, 246, 246, 0.774),rgba(255, 250, 250, 0.774));
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid ;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 30px;
+  }
+  
+
+
+  .add_account h5  {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .add_account h5 a{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+
+  .add_account h5 a:hover{
+     color: var(--orange);
+     /* border: 1px solid var(--orange); */
+  }
+
+
+  
+
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+/* Profil image section end */
 
 
 /* -----------------Main Content------------- */
@@ -233,7 +391,7 @@ body{
 
 
 .header-box{
-    background-color: #d4f7ac;
+    background-color: var(--backgound);
     height: 600px;
 }
 
@@ -262,7 +420,7 @@ body{
   .cardbox .Card .number{
     position: relative;
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--orange);
   }
 
@@ -273,7 +431,7 @@ body{
   }
 
   .cardbox .Card .iconBox{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--black02);
   }
 
@@ -363,28 +521,33 @@ tbody tr:nth-child(even){
 .td-team{
     display: flex;
     align-items: center;
+    
 }
 
-.img-1,
-.img-2,
-.img-3{
+
+
+.td-team .img-1 img{
     height: 38px;
     width: 38px;
     border-radius: 50%;
     margin-left: -15px;
     border: 3px solid #efefef;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.img-1{
-    background: url(/img/face1.jpg  );
+.td-team .img-2 img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 3px solid #efefef;
 }
-.img-2{
-    background: url(/img/face2.jpg);
-}
-.img-3{
-    background: url(/img/face2.jpg);
+
+.td-team .img-3 img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 3px solid #efefef;
 }
 
 
@@ -431,6 +594,29 @@ tbody tr:nth-child(even){
 
 /* Summary Card Section End */
 
+/* Add cart section start */
+
+.attentedence_chart
+{
+    background: #fff;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+    padding-top: .1rem;
+    padding-bottom: .5rem;
+    margin-right: 50px;
+}
+
+.attentedence_chart h3{
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Add cart section end */
+
 /* Copytight section */
 
 .copyright{
@@ -438,10 +624,16 @@ tbody tr:nth-child(even){
     font-weight: 500;
     font-size: .8rem;
     margin-left: 10px;
+    padding: 10px;
 }
 
-.copyright span{
+.copyright span a{
     color: var(--orange);
+    text-decoration: none;
+}
+.copyright span a:hover{
+    color: #0000ff;
+    text-decoration: underline;
 }
 
 
@@ -455,7 +647,7 @@ tbody tr:nth-child(even){
     position: fixed;
     top: 0; left: 0;
     z-index: 10000;
-    background:#E5EFF1;
+    background:#fff;
     display: flex;
     align-items:center ;
     justify-content: center;

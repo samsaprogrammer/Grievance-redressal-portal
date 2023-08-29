@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY Profile</title>
+    <title>My Profile</title>
+    <!-- favi-icon -->
+    <link rel="shortcut icon" href="/assets/wali.png" type="image/x-icon">
 
     <!-- Css -->
     <link rel="stylesheet" href="/css/dash.css" />
@@ -29,10 +31,12 @@
              </a>
           </li>
           <li>
-            <span class="icon">
-              <ion-icon name="person-circle-outline"></ion-icon>
-            </span>
-            <span>Mo Yusuf</span>
+            <a href="dashbord.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Darshbord</span>
+            </a>
           </li>
           <li>
             <a href="#">
@@ -77,25 +81,46 @@
             <ion-icon name="menu-outline"></ion-icon>
           </div>
 
-          <div class="nav-bar">
-            <ul>
-              <span><a href="dashbord.html"><ion-icon name="home-outline"></ion-icon></a></span>
-              <span><a href="profile.html"><ion-icon name="person-circle-outline"></ion-icon></a></span>
-              <span><a href="#"><ion-icon name="albums-outline"></ion-icon></a></span>
-              <span><a href="#"><ion-icon name="calendar-clear-outline"></ion-icon></a></span>
-            </ul>
+          <div class="search">
+            <label for="">
+              <input type="text" placeholder="Search Here" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
           </div>
 
           
 
           <!-- ------------Nav Log out Section Start---------------- -->
-          <div class="user">
-            <a href="index.html">
-              <span class="icon">
-                <ion-icon name="log-out-outline"></ion-icon>
-              </span>
-            </a>
-          </div>
+          <!-- Profile image section start -->
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            <div class="user">
+              <img src="/assets/wali.png" alt="" />
+            </div>
+          </button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="/img/eurtugul (2).jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <h2>Hi, Samsa</h2>
+        <p>samsa.programmer@gmail.com</p>
+        <h1>Manage your Account</h1>
+    </div>
+
+    <div class="add_account">
+       <h5><a href="sign_up.html">Add  account</a></h5>
+    </div>
+  </form>
+</div>
+
+
+          <!-- Profile image section end -->
         </div>
         <hr />
           <!-- ------------Nav log out Section Start---------------- -->
@@ -105,61 +130,71 @@
 
           <!-- Profile Card Section start -->
         <div class="profile">
-          <h1>Attendence</h1>
+          <h1> Our Skills</h1>
           <div class="cards">
             <!-- first -->
             <div class="card red">
-               <div class="skill-container-1">
-                <ion-icon name="log-out-outline"></ion-icon>
-                <h2 class="procecc-text-1">Data <br>Structure</h2>
-                <div class="circular-progress-1">
-                  <span class="progress-value-1">0%</span>
+              <div class="skill_container">
+                <div class="skill_box" style="--i:85%;--clr:#ff6600;">
+                  <img src="/assets/graphic.png" alt="">
+                  <h3>Graphice</h3>
+                  <div class="circle">
+                    <h2>85 <small>%</small></h2>
+                  </div>
                 </div>
-               </div>
+              </div>
             </div>
 
             <!-- Second -->
             <div class="card green">
-              <div class="skill-container-2">
-               <ion-icon name="log-out-outline"></ion-icon>
-               <h2 class="procecc-text-2">Operating <br>System</h2>
-               <div class="circular-progress-2">
-                 <span class="progress-value-2">0%</span>
-               </div>
+              <div class="skill_container">
+                <div class="skill_box" style="--i:55%;--clr:#ff6600;">
+                  <img src="/assets/database.png" alt="">
+                  <h3>Database</h3>
+                  <div class="circle">
+                    <h2>55<small>%</small></h2>
+                  </div>
+                </div>
               </div>
-           </div>
+            </div>
 
             <!-- Third -->
             <div class="card green">
-              <div class="skill-container-3">
-                <ion-icon name="log-out-outline"></ion-icon>
-                <h2 class="procecc-text-3">Soft <br>Skill</h2>
-                <div class="circular-progress-3">
-                  <span class="progress-value-3">0%</span>
+              <div class="skill_container">
+                <div class="skill_box" style="--i:91%;--clr:#ff6600;">
+                  <img src="/assets/frontend.png" alt="">
+                  <h3>Frontend</h3>
+                  <div class="circle">
+                    <h2>91<small>%</small></h2>
+                  </div>
                 </div>
-               </div>
+              </div>
             </div>
 
             <!-- Fourth -->
             <div class="card green">
-              <div class="skill-container-4">
-                <ion-icon name="log-out-outline"></ion-icon>
-                <h2 class="procecc-text-4">Internet of<br>Things</h2>
-                <div class="circular-progress-4">
-                  <span class="progress-value-4">0%</span>
+              <div class="skill_container">
+                <div class="skill_box" style="--i:75%;--clr:#ff6600;">
+                  <img src="/assets/backend.png" alt="">
+                  <h3>backend</h3>
+                  <div class="circle">
+                    <h2>75<small>%</small></h2>
+                  </div>
                 </div>
-               </div>
+              </div>
             </div>
 
             <!-- Fitfth -->
             <div class="card green">
-              <div class="skill-container-5">
-                <ion-icon name="log-out-outline"></ion-icon>
-                <h2 class="procecc-text-5">App <br>Devlopment</h2>
-                <div class="circular-progress-5">
-                  <span class="progress-value-5">0%</span>
+              <div class="skill_container">
+                <div class="skill_box" style="--i:42%;--clr:#ff6600;">
+                  <img src="/assets/soft skill.png" alt="">
+                  <h3>Soft  Skill</h3>
+                  <div class="circle">
+                    <h2>42<small>%</small></h2>
+                  </div>
                 </div>
-               </div>
+              </div>
             </div>
 
         </div>

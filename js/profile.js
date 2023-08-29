@@ -1,18 +1,16 @@
-let circularProgress = document.querySelector(".circular-progress-1"),
-    progressValue = document.querySelector(".progress-value-1");
 
-let progressStartValue = 0,
-    ProgressEndValue = 90,
-    speed = 100;
+//Profile image section start
 
 
-let progress = setInterval(() => {
-    progressStartValue++;
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
 
-    progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style.background = `conic-gradient(#ff4500 ${progressStartValue * 3.6}deg, #ededed 0deg)`
 
-    if(progressStartValue == ProgressEndValue){
-        clearInterval(progress);
-    }
-}, speed);
+// Profile image section end

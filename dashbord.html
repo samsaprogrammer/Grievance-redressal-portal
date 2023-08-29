@@ -52,7 +52,7 @@
               <span class="icon">
                 <ion-icon name="call-outline"></ion-icon>
               </span>
-              <span class="title">Submil Complain </span>
+              <span class="title">Complain Box </span>
             </a>
           </li>
           <li>
@@ -90,9 +90,38 @@
           </div>
 
           <!-- ------------User Img---------------- -->
-          <div class="user">
-            <img src="/assets/wali.png" alt="" />
-          </div>
+          
+
+          <!-- Profile image section start -->
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+            <div class="user">
+              <img src="/assets/wali.png" alt="" />
+            </div>
+          </button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="/img/eurtugul (2).jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <h2>Hi, Samsa</h2>
+        <p>samsa.programmer@gmail.com</p>
+        <h1>Manage your Account</h1>
+    </div>
+
+    <div class="add_account">
+       <h5><a href="sign_up.html">Add  account</a></h5>
+    </div>
+  </form>
+</div>
+
+
+          <!-- Profile image section end -->
         </div>
         <hr />
 
@@ -168,9 +197,15 @@
                       <td>25 May, 2022</td>
                       <td>05 Sep, 2022</td>
                       <td class="td-team">
-                        <div class="img-1"></div>
-                        <div class="img-2"></div>
-                        <div class="img-3"></div>
+                        <div class="img-1">
+                          <img src="/img/face1.jpg" alt="">
+                        </div>
+                        <div class="img-2">
+                          <img src="/img/face2.jpg" alt="">
+                        </div>
+                        <div class="img-3">
+                          <img src="/img/face7.jpg" alt="">
+                        </div>
                       </td>
                       <td>
                         <span class="badge success"> Success </span>
@@ -181,9 +216,15 @@
                       <td>18 Nov, 2022</td>
                       <td>04 jul, 2023</td>
                       <td class="td-team">
-                        <div class="img-1"></div>
-                        <div class="img-2"></div>
-                        <div class="img-3"></div>
+                        <div class="img-1">
+                          <img src="/img/face1.jpg" alt="">
+                        </div>
+                        <div class="img-2">
+                          <img src="/img/face2.jpg" alt="">
+                        </div>
+                        <div class="img-3">
+                          <img src="/img/face5.jpg" alt="">
+                        </div>
                       </td>
                       <td>
                         <span class="badge success waring"> Panding </span>
@@ -194,9 +235,15 @@
                       <td>13 Dec, 2023</td>
                       <td>30 Aug, 2024</td>
                       <td class="td-team">
-                        <div class="img-1"></div>
-                        <div class="img-2"></div>
-                        <div class="img-3"></div>
+                        <div class="img-1">
+                          <img src="/img/face1.jpg" alt="">
+                        </div>
+                        <div class="img-2">
+                          <img src="/img/face2.jpg" alt="">
+                        </div>
+                        <div class="img-3">
+                          <img src="/img/face7.jpg" alt="">
+                        </div>
                       </td>
                       <td>
                         <span class="badge success"> Success </span>
@@ -207,9 +254,15 @@
                       <td>12 Jul, 2022</td>
                       <td>06 Dec, 2023</td>
                       <td class="td-team">
-                        <div class="img-1"></div>
-                        <div class="img-2"></div>
-                        <div class="img-3"></div>
+                        <div class="img-1">
+                          <img src="/img/face1.jpg" alt="">
+                        </div>
+                        <div class="img-2">
+                          <img src="/img/face2.jpg" alt="">
+                        </div>
+                        <div class="img-3">
+                          <img src="/img/face5.jpg" alt="">
+                        </div>
                       </td>
                       <td>
                         <span class="badge success waring"> Panding </span>
@@ -233,7 +286,7 @@
                 <hr />
                 <div class="copyright">
                   <td>
-                    Copyright &copy; 2023 Design by <span> Samsa </span> All
+                    Copyright &copy; 2023 Design by <span><a href="https://github.com/samsa-programmer" target="_blank">samsa</a></span> All
                     right reserved
                   </td>
                 </div>
@@ -241,7 +294,14 @@
 
               <!-- summary Detail section start -->
               <div class="summary">
-                <div class="summary-card">
+                             <!-- Chart section start -->
+                             <div class="attentedence_chart">
+                              <h3>Attendence</h3>
+                              <canvas id="myChart"></canvas>
+                            </div>
+                            <!-- Chart section end -->
+
+                <!-- <div class="summary-card">
                   <div class="summary-single">
                     <ion-icon name="calendar-number-outline"></ion-icon>
                     <div>
@@ -263,7 +323,7 @@
                       <small>Profile Update request</small>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </section>
@@ -281,8 +341,15 @@
 
     <!--loder stction end-->
 
+
+
+    
+               <!-- Chart -->
+               <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Js -->
     <script src="/js/main.js"></script>
+    <script src="/js/dashbord.js"></script>
 
     <!-- Icon -->
     <script
@@ -324,5 +391,23 @@ window.onload = fadeOut();
 
 /* page refresh section end */
 </script>
+
+
+<!-- Profile image section start -->
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+<!-- Profile image section end -->
   </body>
 </html>

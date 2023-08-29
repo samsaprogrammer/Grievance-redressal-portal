@@ -1,33 +1,35 @@
 
+body{
+  background-color: #E9E9E9;
+}
 .outer{
     height: 550px;
     width: 1100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* position: relative; */
     margin-top: 50px;
     margin-left: 90px;
-    
 }
 
 .login_img img{
-    height: 500px;
-    width: 500px;
+    height: 800px;
+    width: 800px;
     position: absolute;
-    top: 100px;
-    left: 160px;
+    top: -30px;
+    left: 30px;
     /* box-shadow: 0px  0px 0px rgba(0,0,0,.6); */
 }
 
 .login-box {
     position: absolute;
     top: 50%;
-    left: 65%;
-    width: 500px;
-    padding: 100px;
+    left: 70%;
+    width: 400px;
+    padding: 60px;
     transform: translate(-50%, -50%);
-    background: rgba(255, 250, 250, 0.987);
+    background: linear-gradient(rgba(39, 38, 38, 0.233),rgba(20, 20, 20, 0.26));
     box-sizing: border-box;
-    /* box-shadow: 5px  5px 0px rgba(0,0,0,.6); */
+    box-shadow: 12px 17px 51px rgba(29, 96, 221, 0.297);
     /* box-shadow: 5px px 0px 0px black; */
     border-radius: 10px;
   }
@@ -82,13 +84,13 @@
   }
   
   .login-box a:hover {
-    background: #E8505B;
+    background: #129BEF;
     color: #000;
     border-radius: 5px;
-    box-shadow: 0 0 5px #E8505B,
-                0 0 25px #E8505B,
-                0 0 50px #E8505B,
-                0 0 100px #E8505B;
+    box-shadow: 0 0 5px #129BEF,
+                0 0 25px #129BEF,
+                0 0 50px #129BEF,
+                0 0 100px #129BEF;
   }
   
   .login-box a span {
@@ -111,6 +113,6 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #E8505B);
+    background: linear-gradient(90deg, transparent, #129BEF);
     animation: btn-anim1 2s linear infinite;
   }
